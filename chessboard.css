@@ -1,0 +1,56 @@
+.container{
+  border: 1px solid red;  
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+  
+.row{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  
+ 
+
+ 
+}
+.empty_box{
+  height: 100%;
+  width: 10%;
+  background-color: white;
+  border: 1px solid red;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:80px;
+}
+
+.box{
+  
+  height: 100%;
+  width: 10%;
+  border: 1px solid black;
+}
+
+.box:nth-of-type(even){
+  background-color: black;
+}
+
+.row:nth-of-type(even){
+  flex-direction: row-reverse;
+}
+
+.box:first-child,.box:last-child{
+  background-color: white;
+  border:none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:80px;
+}
+
+.row:first-child,.row:last-child{
+  background-color: white;
+  border:none;
+}
